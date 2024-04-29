@@ -16,7 +16,7 @@
             <li>Utiliza las tres dimensiones.</li>
           </ul>
         </p>
-        <button class="ar-button" @click="navigateToARPage">Ir a AR</button>
+        <router-link to="/ar" class="ar-button" @click.native="cameraActive = false">Ir a AR</router-link>
       </div>
     </div>
   </div>
@@ -24,10 +24,10 @@
 
 <script>
 export default {
-  methods: {
-    navigateToARPage() {
-      this.$router.push('/ar');
-    }
+  data() {
+    return {
+      cameraActive: false // Inicialmente, la cámara no está activa
+    };
   }
 }
 </script>
@@ -121,5 +121,29 @@ ul {
 .ar-button:hover {
   background-color: #0056b3;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .background-container::after {
+    filter: blur(5px); /* Reducir el desenfoque en dispositivos móviles */
+  }
+
+  .center-content {
+    padding: 10px; /* Reducir el padding en dispositivos móviles */
+  }
+
+  .title {
+    font-size: 2em; /* Reducir el tamaño del título en dispositivos móviles */
+  }
+
+  .description {
+    font-size: 1em; /* Reducir el tamaño del texto en dispositivos móviles */
+  }
+
+  .ar-button {
+    padding: 8px 16px; /* Reducir el padding del botón en dispositivos móviles */
+    font-size: 1em; /* Reducir el tamaño del texto del botón en dispositivos móviles */
+  }
 }
 </style>
