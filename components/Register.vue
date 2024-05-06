@@ -146,7 +146,7 @@ body {
 }
 
 .card input[type="submit"] {
-    background-color: #007bff;
+    background-color: #59499b;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -156,7 +156,7 @@ body {
 }
 
 .card input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #7f6fc0;
 }
 
 /* Estilos para los mensajes de éxito y error */

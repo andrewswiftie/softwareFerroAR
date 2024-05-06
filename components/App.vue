@@ -3,7 +3,7 @@
     <header v-if="$route.path !== '/ar'">
       <!-- Aquí puedes agregar un encabezado común para todas las páginas -->
       <router-link to="/" class="home-link">
-        <h1>FerroAR</h1>
+        <h1 class="title">FerroAR</h1>
       </router-link>
       <nav>
         <!-- Aquí podrías agregar la navegación de la aplicación -->
@@ -78,21 +78,21 @@ nav {
 }
 
 .btn {
-  background-color: #0056b3;
+  background-color: #59499b;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-  background-color: #002f61;
+  background-color: #7f6fc0;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -107,11 +107,16 @@ footer {
   background-color: #292929;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 1000; /* Asegura que el pie de página esté por encima de otros elementos */
+}
+.title {
+  font-family: 'Courier New', Courier, monospace; /* Cambia 'Courier New' por la fuente que desees */
+  font-weight: lighter;
 }
 </style>

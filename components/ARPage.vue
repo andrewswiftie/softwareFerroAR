@@ -20,9 +20,12 @@
     </head>
     <body>
       <a-scene embedded arjs="sourceType: webcam; sourceWidth: 640; sourceHeight: 480;" style="position: fixed; z-index: 2000; width: 100%; height: 100%;">
+        <a-assets>
+            <img id='textura' src='./imagen/door_2.jpg'>
+        </a-assets>
         <a-marker preset="hiro" position="0 0 0">
           <!-- Ajusta la posición y el tamaño del cuadro -->
-          <a-box></a-box>
+          <a-box src='#textura' animation="property: rotation; to: 0 360 0; loop: true; dur: 5000;"></a-box>
         </a-marker>
         <a-entity camera></a-entity>
       </a-scene>
