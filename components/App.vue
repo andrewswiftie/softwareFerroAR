@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="app-container">
     <header v-if="$route.path !== '/ar'">
       <!-- Aquí puedes agregar un encabezado común para todas las páginas -->
       <router-link to="/" class="home-link">
@@ -34,6 +34,10 @@ export default {
 
 <style>
 /* Estilos globales de la aplicación */
+.app-container {
+    overflow: scroll; /* Evita el desplazamiento de la pantalla */
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;

@@ -7,6 +7,7 @@
         <p class="description">
           Bienvenido a FerroAR, una experiencia única que combina la rica historia de nuestro parque con la innovadora tecnología de Realidad Aumentada (AR). Descubre lugares emblemáticos y sumérgete en su fascinante pasado a través de animaciones interactivas y narrativas, diseñadas para enriquecer tu visita.
         </p>
+        <img src="./ar2.jpg" alt="AR" class="additional-image2">
         <p class="description">
           La Realidad Aumentada (AR) nos permite superponer información visual sobre el mundo real, brindando una nueva dimensión a la experiencia del visitante. Con FerroAR, puedes apuntar tu dispositivo hacia puntos de interés específicos y desbloquear una variedad de contenido multimedia, desde recreaciones históricas hasta emocionantes relatos de antaño.
         </p>
@@ -88,7 +89,7 @@ body {
   font-size: 2em;
   text-align: center;
   font-family: fantasy;
-  font-weight: bold;
+  
   margin-bottom: 20px;
 }
 
@@ -128,7 +129,13 @@ ul {
 
 /* Estilos para imágenes adicionales */
 .additional-image {
-  max-width: 80%;
+  max-width: 60%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.additional-image2 {
+  max-width: 60%;
   margin-top: 20px;
   border-radius: 10px;
 }

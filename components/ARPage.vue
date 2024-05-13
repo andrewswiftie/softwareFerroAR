@@ -19,7 +19,7 @@
       </style>
     </head>
     <body>
-      <a-scene embedded arjs="sourceType: webcam; sourceWidth: 640; sourceHeight: 480;" style="position: fixed; z-index: 2000; width: 100%; height: 100%;">
+      <a-scene embedded arjs>
         <a-assets>
             <img id='textura' src='./imagen/door_2.jpg'>
         </a-assets>

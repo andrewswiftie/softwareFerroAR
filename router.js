@@ -4,13 +4,14 @@ import Login from './components/Login.vue';
 import Register from './components/Register.vue';
 import ResetPassword from './components/ResetPassword.vue';
 import ARPage from './components/ARPage.vue';
+import Ar from './components/ar.vue';
 
 const routes = [
   { path: '/', component: Index },
   { path: '/login', component: Login },
   { path: '/register', component: Register },
   { path: '/reset-password', component: ResetPassword },
-  { path: '/ar', component: ARPage }
+  { path: '/ar', component: Ar }
 ];
 
 const router = createRouter({
